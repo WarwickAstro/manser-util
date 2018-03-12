@@ -8,7 +8,7 @@ if not os.path.exists(path + 'complete_data'):
 # Selects all filenames from README
 f=open(path + 'README')
 lines=f.readlines()
-for i in xrange(len(lines)):
+for i in range(len(lines)):
   if (lines[i][0] == '/'): #Checks line in README is a filepath.
     file_name = lines[i].split()[0]
     if (file_name.find('IDP') != -1 ): # Selects science data files.
